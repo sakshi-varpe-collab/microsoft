@@ -1,0 +1,979 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+ /* @media(max-width:500px){
+    .wrapper{
+        width: 100%;
+        height:30vh;
+        display: flex;
+        flex-direction: column;
+    }
+ } */
+
+.navigation{
+    height: 10%;
+    width: 100%;
+    background-color: white; 
+    display: flex;
+    padding: 1vw 1vw 1vw 3vw;
+    z-index: 1;
+    border-bottom:1px solid black ;
+}
+
+.left-navigation{
+    height: 100%;
+    width: 50%;
+    /* background-color: darkgray; */
+    display: flex;
+}
+
+.logo{
+    height: 100%;
+    width: 7%;
+    /* background-color: crimson; */
+    margin-right: 1vw;
+}
+
+.para{
+    height: 100%;
+    width:93%;
+    /* background-color: darkkhaki; */
+}
+
+.para h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.para p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5vw;
+}
+
+.right-navigation{
+    height: 100%;
+    width: 50%;
+    /* background-color: darkolivegreen; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3vw;
+}
+
+.right-navigation p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 2vw;
+}
+
+.right-navigation button{
+    padding: .6vw 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+/* 
+@media(min-width:1px) and (max-width:425px){
+    .navigation{
+        height: 15vh;
+        width: 100%;
+        background-color: blueviolet;
+        display: flex;
+    }
+
+    .left-navigation .logo{
+        font-size: .3VW;
+    }
+
+    .left-navigation .para{
+        height: 5vh;
+        width: 100%;
+    }
+}  */
+
+.nav{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    /* border-top: .2vw solid rgb(216, 209, 209); */
+}
+
+.left-nav{
+    height: 100%;
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    padding: 1vw 1vw 1vw 3vw;
+}
+
+.m-logo{
+    height: 100%;
+    width: 20%;
+    /* background-color: forestgreen; */
+    margin-right: 2vw;
+}
+
+.features{
+    height: 100%;
+    width: 80%;
+    /* background-color: cadetblue; */
+    padding-top: .4vw;
+}
+
+.features a{
+    text-decoration: none;
+    font-size: .8vw;
+    font-weight: 500;
+    color: black;
+    margin-right: 1.1vw;
+}
+
+.right-nav{
+    height: 100%;
+    width: 50%;
+    /* background-color: darksalmon; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:3vw;
+}
+
+.right-nav h4{
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: .1vw;
+    text-align: center;
+}
+
+.right-nav i{
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 1vw;
+    /* border: 1px solid black; */
+}
+
+.image{
+    height: 80%;
+    width: 100%;
+    background-color: chocolate;
+    background-image: url(copilot+pc.avif);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5vw;
+    padding-bottom: 6.7vw;
+}
+
+.box{
+    height: 70%;
+    width: 35%;
+    background-color:white;
+    padding: 3vw 1vw 1vw 3vw;
+}
+
+.box h4{
+    font-size: 2.3vw;
+    font-weight: 550;
+}
+
+.box p{
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: 1vw;
+    line-height: 2vw;
+}
+
+.contents{
+    height: 110%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.icons{
+    height: 10%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-circle{
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 1vw;
+}
+
+.left-arrow{
+    font-size:2vw ;
+    font-weight: 200;
+    margin-right: 1vw;
+}
+
+.circle{
+    font-size: .9vw;
+    font-weight: 500;
+    margin-right: 1vw;
+}
+
+.blank-circle{
+    font-size: .9vw;
+    font-weight: 500;
+    margin-right: 1vw;
+}
+
+.right-arrow{
+    font-size: 2vw;
+    font-weight: 200;
+    margin-right: 1vw;
+}
+
+.microsoft-icons{
+    height: 20%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.microsoft-icons a{
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.first-micro{
+    height: 100%;
+    width: 15%;
+    /* background-color: aqua; */
+}
+
+.up-first{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(222, 184, 28); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-first i{
+    font-size: 3vw;
+}
+
+.low-first{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(83, 114, 104); */
+    text-align: center;
+}
+
+.second-micro{
+    height: 100%;
+    width: 15%;
+    /* background-color: chartreuse; */
+}
+
+.up-second{
+    height: 50%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-second i{
+    font-size: 3vw;
+}
+
+.low-second{
+    height: 50%;
+    width: 100%;
+    /* background-color: forestgreen; */
+    text-align: center;
+}
+
+.third-micro{
+    height: 100%;
+    width: 15%;
+    /* background-color: coral; */
+}
+
+.up-third{
+    height: 50%;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-third i{
+    font-size: 3vw;
+}
+
+.low-third{
+    height: 50%;
+    width: 100%;
+    /* background-color: pink; */
+    text-align: center;
+}
+
+.fourth-micro{
+    height: 100%;
+    width: 15%;
+    /* background-color: cornflowerblue; */
+}
+
+.up-fourth{
+    height: 50%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-fourth i{
+    font-size: 3vw;
+}
+
+.low-fourth{
+    height: 50%;
+    width: 100%;
+    /* background-color: mediumvioletred; */
+    text-align: center;
+}
+
+.main-box{
+    height: 70%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+}
+
+.first-box{
+    height: 99%;
+    width: 21%;
+    /* background-color: chartreuse; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 1.3vw;
+}
+
+.upper-first-box{
+    height: 35%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-image: url(Content-Card-Microsoft-365-Lifestyle-.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.lower-first-box{
+    height: 65%;
+    width: 100%;
+    /* background-color: chocolate; */
+}
+
+.lower-first-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1vw 1vw 1vw 2vw;
+}
+
+.lower-first-box p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.but{
+    padding:1vw 1vw 1vw 2vw;
+}
+
+.lower-first-box h5{
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: blue;
+    padding-left: 2vw;
+}
+
+.lower-first-box i{
+    font-size: 1.1vw;
+}
+
+.second-box{
+    height: 99%;
+    width: 21%;
+    /* background-color: darksalmon; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 1.3vw;
+}
+
+.upper-second-box{
+    height: 35%;
+    width: 100%;
+    /* background-color: crimson; */
+    background-image: url(Content-Card-Game-Pass.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.lower-second-box{
+    height: 65%;
+    width: 100%;
+    /* background-color: hotpink; */
+}
+
+.lower-second-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1vw 1vw 1vw 2vw;
+}
+
+.lower-second-box p{
+    font-size: 1.1vw;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.join-but{
+    margin-top: 6.5vw;
+    margin-left: 2vw;
+}
+
+.third-box{
+    height: 99%;
+    width: 21%;
+    /* background-color: gold; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 1.3vw;
+}
+
+.upper-third-box{
+    height: 35%;
+    width: 100%;
+    /* background-color: deeppink; */
+    background-image: url(gldn-XSX-CP-Xbox-Series-X.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.lower-third-box{
+    height: 65%;
+    width: 100%;
+    /* background-color: forestgreen; */
+}
+
+.lower-third-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1vw 1vw 1vw 2vw;
+}
+
+.lower-third-box p{
+    font-size: 1.1vw;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.x-but{
+    margin-left: 2vw;
+    margin-top: 11vw;
+}
+
+.fourth-box{
+    height: 99%;
+    width: 21%;
+    /* background-color: cornflowerblue; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 1.3vw;
+}
+
+.upper-fourth-box{
+    height: 35%;
+    width: 100%;
+    /* background-color: darkslateblue; */
+    background-image: url(Series-S-Evergreen.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.lower-fourth-box{
+    height: 65%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.lower-fourth-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1vw 1vw 1vw 2vw;
+}
+
+.lower-fourth-box p{
+    font-size: 1vw;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.s-but{
+    margin-top: 11vw;
+    margin-left: 2vw;
+}
+
+.picture{
+    height: 110%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 75%;
+    width: 90%;
+    /* background-color: blueviolet; */
+    background-image: url(Highlight-MultiCanvas-Microsoft.avif);
+    background-position: center;
+    background-size: cover;
+    margin-top: 11vw;
+}
+
+.business-img{
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.text{
+    height: 10%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.text h3{
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 4.7vw;
+    padding-top: 2.5vw;
+}
+
+.main-container{
+    height: 90%;
+    width: 100%;
+    /* background-color: darkorange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container{
+    height: 90%;
+    width: 22%;
+    /* background-color: crimson; */
+    margin-right: 1.5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.top-first{
+    height: 30%;
+    width: 100%;
+    /* background-color: cadetblue; */
+    background-image: url(SurfaceFamilyForBusiness.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-first{
+    height: 70%;
+    width: 100%;
+    /* background-color: rgb(185, 196, 185); */
+}
+
+.bottom-first h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3vw 1vw 1vw 2vw;
+}
+
+.bottom-first p{
+    font-size: 1vw;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.bottom-first button{
+    margin-top: 9vw;
+    margin-left: 2vw;
+    border-radius:.2vw;
+}
+.second-container{
+    height: 90%;
+    width: 22%;
+    /* background-color: chartreuse; */
+    margin-right: 1.5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.top-second{
+    height: 30%;
+    width: 100%;
+    /* background-color: darkblue; */
+    background-image: url(Content-Card-Copilot-Commercial.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-second{
+    height: 70%;
+    width: 100%;
+    /* background-color: darkgray; */
+}
+
+.new-button{
+    padding: 1vw 1vw 1vw 2vw;
+}
+
+.bottom-second h3{
+    font-size: 21px;
+    font-weight: 600;
+    padding-left: 2vw;
+}
+
+.bottom-second p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1vw 1vw 2.5vw 2vw;
+}
+
+.second-button button{
+    margin-left: 1vw;
+    border-radius: .2vw;
+    margin-top: 1.3vw;
+}
+
+.third-container{
+    height: 90%;
+    width: 22%;
+    /* background-color: hotpink; */
+    margin-right: 1.5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.top-third{
+    height: 30%;
+    width: 100%;
+    /* background-color: darkmagenta; */
+    background-image: url(Content-Card-Azure-AI-Bloom.avif);
+    background-position:center;
+    background-size: cover;
+}
+
+.botton-third{
+    height: 70%;
+    width: 100%;
+    /* background-color: darksalmon; */
+}
+
+.bottom-third h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4.7vw 1vw 1vw 2vw;
+}
+
+.bottom-third p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+
+.third-button button{
+    border-radius: .2vw;
+    margin-left: 2vw;
+    margin-top: 4.8vw;
+}
+.fourth-container{
+    height: 90%;
+    width: 22%;
+    /* background-color: gold; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.top-fourth{
+    height: 30%;
+    width: 100%;
+    /* background-color: violet; */
+    background-image: url(Content-Card-Visual-Studio-Icon.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-fourth{
+    height: 70%;
+    width: 100%;
+    /* background-color: gold; */
+}
+
+.bottom-fourth h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4.5vw 1vw 1vw 2vw;
+}
+
+.bottom-fourth p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 2vw;
+    line-height: 1.6vw;
+}
+
+.fourth-button button{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    border-radius: .2vw;
+}
+
+.footer{
+height: 100%;
+width: 100%;
+background-color: white;
+}
+
+.first-foot{
+height: 30%;
+width: 100%;
+/* background-color: brown; */
+display: flex;
+}
+
+.left-foot{
+height: 100%;
+width: 50%;
+/* background-color: chocolate; */
+display: flex;
+}
+
+.left-foot h5{
+font-size: 15px;
+font-weight: 500;
+padding-left: 4vw;
+padding-top: 5.4vw;
+}
+
+.left-foot i{
+font-size: 25px;
+font-weight: 400;
+padding: 5vw 1vw 1vw 1vw;
+}
+
+.right-foot{
+height: 100%;
+width: 50%;
+/* background-color: crimson; */
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.right-foot button{
+margin-top: 5vw;
+margin-right: 2vw;
+}
+
+.second-foot{
+height: 60%;
+width: 100%;
+/* background-color: cadetblue; */
+display: flex;
+justify-content: space-evenly;
+}
+
+.second-foot h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #333533;
+}
+
+.second-foot a{
+    text-decoration: none;
+    font-size: .9vw;
+    font-weight: 500;
+    color: #333533;
+}
+
+.first-col{
+height: 100%;
+width: 15%;
+/* background-color: aqua; */
+display: flex;
+flex-direction: column;
+padding: 1vw;
+}
+
+.first-col a{
+    padding:.5vw 0vw;
+}
+
+.second-col{
+height: 100%;
+width: 15%;
+/* background-color: pink; */
+display: flex;
+flex-direction: column;
+padding: 1vw;
+}
+
+.second-col a{
+    padding:.5vw 0vw;
+}
+
+.third-col{
+height: 100%;
+width: 15%;
+/* background-color: chartreuse; */
+display: flex;
+flex-direction: column;
+padding: 1vw;
+}
+
+.third-col a{
+    padding:.5vw 0vw;
+    font-size: .8vw;
+}
+
+.four-col{
+height: 100%;
+width: 15%;
+/* background-color: chocolate; */
+display: flex;
+flex-direction: column;
+padding: 1vw;
+}
+
+.four-col a{
+    padding:.5vw 0vw;
+}
+
+.five-col{
+    height: 100%;
+    width: 15%;
+    /* background-color: rgb(139, 0, 23); */
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.five-col a{
+    padding:.5vw 0vw;
+}
+
+.six-col{
+height: 100%;
+width: 15%;
+/* background-color: crimson; */
+display: flex;
+flex-direction: column;
+padding: 1vw;
+}
+
+.six-col a{
+    padding:.5vw 0vw;
+}
+
+.third-foot{
+height:10% ;
+width: 100%;
+/* background-color: coral; */
+display: flex;
+}
+
+.left-third-foot{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex; 
+    /* padding-left: 2vw; */
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100%;
+    width: 30%;
+    /* background-color: gray; */
+    display: flex; 
+}
+
+.cancel{
+    height: 100%;
+    width: 20%;
+    /* background-color: chocolate; */
+    padding-top: 1.3vw;
+}
+
+.name{
+    /* margin-top: 2.5vw; */
+    /* text-align: center; */
+    height: 100%;
+    width: 80%;
+    /* background-color: crimson; */
+    padding-top: 1.5vw;
+}
+
+.left-third-foot a{
+    font-size: .9vw;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333533 ;
+    margin-right: 1.5vw;
+}
+
+.right-third-foot{
+    height: 100%;
+    width: 50%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-third-foot a{
+    text-decoration: none;
+    font-size: .9vw;
+    font-weight: 500;
+    color: #333533;
+    margin-right: 1vw;
+}
+
+
